@@ -47,7 +47,7 @@ the developement headers.
 Once libpcap-dev is installed, `go` will install the necessary go dependencies. Just
 build and install using go.
 
-   go get github.com/danielarndt/flowtbag
+   go get github.com/moin786ahamad/Flowtbag-Tool
 
 ## Usage
 
