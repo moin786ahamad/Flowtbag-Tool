@@ -1,6 +1,5 @@
 ## License
 
-Copyright 2011 Daniel Arndt
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -14,9 +13,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Author: 
-    Daniel Arndt <danielarndt@gmail.com> (http://dan.arndt.ca)
-
 ## Purpose
 
 The purpose of this program is to calculate flow statistics from a given 
@@ -25,15 +21,12 @@ focus.
 
 ## Requirements
 
-To run the executable, you will need libpcap installed. On a debian based
+To run the executable, you will need libpcap-dev installed. On a debian based
 system, the following command will install the appropriate library:
 
-    apt-get install libpcap
+    apt-get install libpcap-dev
+    apt-get install golang-go
 
-Other distributions will likely have a similar package name.
-
-To compile from source, you'll need a Go compiler, libpcap headers, and
-gopcap.
 
 ### Go compiler:
 
@@ -51,7 +44,7 @@ the developement headers.
 
 ## Compilation
 
-Once libpcap is installed, `go` will install the necessary go dependencies. Just
+Once libpcap-dev is installed, `go` will install the necessary go dependencies. Just
 build and install using go.
 
    go get github.com/danielarndt/flowtbag
@@ -63,7 +56,7 @@ changing functionality of the program in its early stages. However, if you
 run flowtbag, the currently implemented options should be displayed. A
 typical use case might look something like:
 
-    $ ./flowtbag test.cap > test.out
+    $ ./flowtbag test.pcap > test.out
 
 ## Output
 
